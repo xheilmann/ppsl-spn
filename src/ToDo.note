@@ -1,0 +1,4 @@
+Speicherung der ermittelten gewichte um das privat trainierte netzwerk neu zu laden
+parameter hinzufügen, welcher sagt ob netzwerk neu trainiert (also gewichte bestimmt) oder geladen werden sollen
+
+evaluierung aller Leaf knoten vom Clienet welcher eine privat evaluierung durchführen will (vielleicht erst nur von manager) mit inser in share von diesen werten

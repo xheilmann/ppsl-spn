@@ -1,0 +1,21 @@
+FROM python:3.7-slim-buster
+
+WORKDIR /ppspn_env
+
+RUN apt-get update && apt-get install -y python3 python3-pip
+
+RUN python -m pip install galois==0.0.20 lark matplotlib nest-asyncio networkx scipy sympy torch tqdm pandas==1.3.1 tensorflow==1.15.0 spflow
+
+COPY ./resources/input/nltcs ./resources/input/nltcs
+
+COPY ./src/ ./src/
+
+COPY ./resources/config ./resources/config
+
+COPY ./resources/output ./resources/output
+
+ENV LOGGER_LEVEL=18
+
+ENV PYTHONPATH="$PYTHONPATH:/src"
+
+CMD ["python", "src/main_manager.py"]

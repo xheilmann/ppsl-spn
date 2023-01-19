@@ -1,0 +1,11 @@
+docker swarm init of docker swarm join 					            # initializes a swarm manager or joins an existing swarm
+docker network create --driver=overlay --attachable spn_overlay		# created an overlay the container are connected with each other
+docker exec -it manager bash					                    # opens a bash at the container, manager here
+
+docker system df                                                    #shows space
+docker images                                                       #shows images
+docker rmi <imageID>                                                # removes image
+docker ps                                                           # shows containers
+docker stats                                                        #shows statistics, such as network communication
+docker swarm leave --force                                          #force leaves a swarm
+

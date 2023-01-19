@@ -1,0 +1,3 @@
+split_depth: 1, num_recursive_splits: 10, num_input_distributions: 3, num_sums: 1
+split_depth: 1, num_recursive_splits: 6, num_input_distributions: 4, num_sums: 1
+split_depth: 1, num_recursive_splits: 8, num_input_distributions: 4, num_sums: 1
